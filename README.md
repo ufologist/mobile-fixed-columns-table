@@ -46,9 +46,15 @@ $('#table').mobileFixedColumnsTable({
 });
 ```
 
+示例
+--------------------
+<a href="http://ufologist.github.io/mobile-fixed-columns-table/mobile-fixed-columns-table-bootstrap.html">mobile fixed columns table与bootstrap一起使用</a>
+
+<a href="http://ufologist.github.io/mobile-fixed-columns-table/mobile-fixed-columns-table-democss.html">mobile fixed columns table与DataTables的demo.css一起使用</a>
+
 依赖
 --------------------
-1. <a href="">jQuery</a>
+1. <a href="http://jquery.com/">jQuery</a>
 2. <a href="http://www.datatables.net">DataTables</a> & <a href="http://www.datatables.net/extras/fixedcolumns/">FixedColumns</a>
 3. <a href="http://cubiq.org/iscroll-4">iScroll</a>
 
@@ -91,7 +97,3 @@ $('#table').mobileFixedColumnsTable({
 Q: 能集成bootstrap一起使用吗?
 
 A: 本组件兼容使用bootstrap作为基础样式库, 但切记一定要覆盖bootstrap默认的table样式max-width: 100%为max-width: none, 否则会使表格宽度无法溢出, 造成不出现水平滚动条的问题.
-
-github pages demo
---------------------
-TODO
