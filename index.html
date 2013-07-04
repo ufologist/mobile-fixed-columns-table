@@ -51,14 +51,14 @@
 <p>TODO 移动平台上的截图</p>
 
 <h2>
-<a name="" class="anchor" href="#"><span class="octicon octicon-link"></span></a>测试过的手机</h2>
+<a name="test" class="anchor" href="#"><span class="octicon octicon-link"></span></a>测试过的手机</h2>
 
 <ul>
 <li>小米1</li>
 <li>Note2(N7100)</li>
 <li>GT-I8552</li>
 </ul><h2>
-<a name="-1" class="anchor" href="#-1"><span class="octicon octicon-link"></span></a>使用方法</h2>
+<a name="usage" class="anchor" href="#-1"><span class="octicon octicon-link"></span></a>使用方法</h2>
 
 <div class="highlight"><pre><span class="c1">// 至少需要的参数</span>
 <span class="nx">$</span><span class="p">(</span><span class="s1">'#table'</span><span class="p">).</span><span class="nx">mobileFixedColumnsTable</span><span class="p">({</span> <span class="c1">// 请参考DataTables的配置</span>
@@ -89,16 +89,16 @@
 </pre></div>
 
 <h2>
-<a name="-2" class="anchor" href="#-2"><span class="octicon octicon-link"></span></a>依赖</h2>
+<a name="deps" class="anchor" href="#-2"><span class="octicon octicon-link"></span></a>依赖</h2>
 
 <ol>
-<li><a href="">jQuery</a></li>
+<li><a href="http://jquery.com/">jQuery</a></li>
 <li>
 <a href="http://www.datatables.net">DataTables</a> &amp; <a href="http://www.datatables.net/extras/fixedcolumns/">FixedColumns</a>
 </li>
 <li><a href="http://cubiq.org/iscroll-4">iScroll</a></li>
 </ol><h2>
-<a name="-3" class="anchor" href="#-3"><span class="octicon octicon-link"></span></a>不是我想要造轮子</h2>
+<a name="why" class="anchor" href="#-3"><span class="octicon octicon-link"></span></a>不是我想要造轮子</h2>
 
 <p>为什么非要专门为移动平台包装这么一个组件?
 主要是因为试过很多可以固定列/表头的表格组件, 在移动平台上使用都不理想.</p>
@@ -116,7 +116,7 @@
 <p>想着是否需要参考这些已经成熟的固定列/表头的HTML结构, 自己来实现一个类似的组件, 让其兼容<strong>Android 2.3.x</strong>?</p>
 
 <h2>
-<a name="-4" class="anchor" href="#-4"><span class="octicon octicon-link"></span></a>深受启发</h2>
+<a name="inspiration" class="anchor" href="#-4"><span class="octicon octicon-link"></span></a>深受启发</h2>
 
 <p>某日看过某人随便写的一个可以在移动平台上使用的固定列/表头的组件, 虽是个半成品, 但深受启发, 原来使用iScroll来代替原生滚动条就行了, 就这么简单.</p>
 
@@ -136,7 +136,7 @@
 <p>最最关键的好处是, 按照这种思路, 我根本不需要动其他组件的代码, 在FixedColumns组件构造完后, 再加入我将原生滚动条替换成iScroll的方法, 这样对大家都没有影响, 可谓完美的方案.</p>
 
 <h2>
-<a name="-5" class="anchor" href="#-5"><span class="octicon octicon-link"></span></a>常见问题</h2>
+<a name="qa" class="anchor" href="#-5"><span class="octicon octicon-link"></span></a>常见问题</h2>
 
 <p>Q: 能集成bootstrap一起使用吗?</p>
 
