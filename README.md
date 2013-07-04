@@ -1,40 +1,45 @@
-mobile-fixed-columns-table
+mobile-fixed-columns-table(v1.0 2013-07-04)
 ====================
 在移动平台上(Android/iOS...)可用的固定列/表头的表格组件
+<img src="inspiration/img/preview-pc-browser.jpg" height="387" width="523">
 
 测试过的手机
-====================
+--------------------
 * 小米1
 * Note2(N7100)
 * GT-I8552
 
 使用方法
-====================
-    // 至少需要的参数
-    $('#table').mobileFixedColumnsTable({ // 请参考DataTables的配置
-        'sScrollY': '300px',
-        'sScrollX': '100%',
-        'bScrollCollapse': true,
-    });
+--------------------
+```JavaScript
+// 至少需要的参数
+$('#table').mobileFixedColumnsTable({ // 请参考DataTables的配置
+    'sScrollY': '300px',
+    'sScrollX': '100%',
+    'bScrollCollapse': true,
+});
+```
 
-    // 更多的配置项
-    $('#table').mobileFixedColumnsTable({
-        'sScrollY': '300px',
-        'sScrollX': '100%',
-        'bScrollCollapse': true,
-        'oLanguage': {
-            'sInfo': ''
+```JavaScript
+// 更多的配置项
+$('#table').mobileFixedColumnsTable({
+    'sScrollY': '300px',
+    'sScrollX': '100%',
+    'bScrollCollapse': true,
+    'oLanguage': {
+        'sInfo': ''
+    }
+}, {
+    fixedColumnsOptions: { // 请参考DataTables的FixedColumns的配置
+        iLeftColumns: 2
+    },
+    scrollerOptions: { // 请参考iScroll的配置
+        onScrollMove: function() {
+            console.log(this, arguments);
         }
-    }, {
-        fixedColumnsOptions: { // 请参考DataTables的FixedColumns的配置
-            iLeftColumns: 2
-        },
-        scrollerOptions: { // 请参考iScroll的配置
-            onScrollMove: function() {
-                console.log(this, arguments);
-            }
-        }
-    });
+    }
+});
+```
 
 使用效果
 ====================
