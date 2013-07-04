@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>mobile-fixed-columns-table by ufologist</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/main.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+
+      <header>
+        <h1>mobile-fixed-columns-table</h1>
+        <p>在移动平台上(Android/iOS...)可用的固定列/表头的表格组件</p>
+      </header>
+
+      <div id="banner">
+        <span id="logo"></span>
+
+        <a href="https://github.com/ufologist/mobile-fixed-columns-table" class="button fork"><strong>View On GitHub</strong></a>
+        <div class="downloads">
+          <span>Downloads:</span>
+          <ul>
+            <li><a href="https://github.com/ufologist/mobile-fixed-columns-table/zipball/master" class="button">ZIP</a></li>
+            <li><a href="https://github.com/ufologist/mobile-fixed-columns-table/tarball/master" class="button">TAR</a></li>
+          </ul>
+        </div>
+      </div><!-- end banner -->
+
+    <div class="wrapper">
+      <nav>
+        <ul></ul>
+      </nav>
+      <section>
+        <h1>
+<a name="mobile-fixed-columns-table" class="anchor" href="#mobile-fixed-columns-table"><span class="octicon octicon-link"></span></a>mobile-fixed-columns-table</h1>
+
+<p>在移动平台上(Android/iOS...)可用的固定列/表头的表格组件</p>
+
+<p>v1.0 2013-07-04</p>
+
+<p><img src="inspiration/img/preview-pc-browser.jpg" height="387" width="523" alt="PC浏览器上组件的运行效果截图"></p>
+
+<p>TODO 移动平台上的截图</p>
+
+<h2>
+<a name="" class="anchor" href="#"><span class="octicon octicon-link"></span></a>测试过的手机</h2>
+
+<ul>
+<li>小米1</li>
+<li>Note2(N7100)</li>
+<li>GT-I8552</li>
+</ul><h2>
+<a name="-1" class="anchor" href="#-1"><span class="octicon octicon-link"></span></a>使用方法</h2>
+
+<div class="highlight"><pre><span class="c1">// 至少需要的参数</span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">'#table'</span><span class="p">).</span><span class="nx">mobileFixedColumnsTable</span><span class="p">({</span> <span class="c1">// 请参考DataTables的配置</span>
+    <span class="s1">'sScrollY'</span><span class="o">:</span> <span class="s1">'300px'</span><span class="p">,</span>
+    <span class="s1">'sScrollX'</span><span class="o">:</span> <span class="s1">'100%'</span><span class="p">,</span>
+    <span class="s1">'bScrollCollapse'</span><span class="o">:</span> <span class="kc">true</span>
+<span class="p">});</span>
+</pre></div>
+
+<div class="highlight"><pre><span class="c1">// 更多的配置项</span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">'#table'</span><span class="p">).</span><span class="nx">mobileFixedColumnsTable</span><span class="p">({</span>
+    <span class="s1">'sScrollY'</span><span class="o">:</span> <span class="s1">'300px'</span><span class="p">,</span>
+    <span class="s1">'sScrollX'</span><span class="o">:</span> <span class="s1">'100%'</span><span class="p">,</span>
+    <span class="s1">'bScrollCollapse'</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="s1">'oLanguage'</span><span class="o">:</span> <span class="p">{</span>
+        <span class="s1">'sInfo'</span><span class="o">:</span> <span class="s1">''</span>
+    <span class="p">}</span>
+<span class="p">},</span> <span class="p">{</span>
+    <span class="nx">fixedColumnsOptions</span><span class="o">:</span> <span class="p">{</span> <span class="c1">// 请参考DataTables的FixedColumns的配置</span>
+        <span class="nx">iLeftColumns</span><span class="o">:</span> <span class="mi">2</span>
+    <span class="p">},</span>
+    <span class="nx">scrollerOptions</span><span class="o">:</span> <span class="p">{</span> <span class="c1">// 请参考iScroll的配置</span>
+        <span class="nx">onScrollMove</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">this</span><span class="p">,</span> <span class="nx">arguments</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">});</span>
+</pre></div>
+
+<h2>
+<a name="-2" class="anchor" href="#-2"><span class="octicon octicon-link"></span></a>依赖</h2>
+
+<ol>
+<li><a href="">jQuery</a></li>
+<li>
+<a href="http://www.datatables.net">DataTables</a> &amp; <a href="http://www.datatables.net/extras/fixedcolumns/">FixedColumns</a>
+</li>
+<li><a href="http://cubiq.org/iscroll-4">iScroll</a></li>
+</ol><h2>
+<a name="-3" class="anchor" href="#-3"><span class="octicon octicon-link"></span></a>不是我想要造轮子</h2>
+
+<p>为什么非要专门为移动平台包装这么一个组件?
+主要是因为试过很多可以固定列/表头的表格组件, 在移动平台上使用都不理想.</p>
+
+<p>例如:</p>
+
+<ul>
+<li><a href="https://github.com/markmalek/Fixed-Header-Table">Fixed-Header-Table</a></li>
+<li><a href="http://www.datatables.net/extras/fixedcolumns/">DataTables - FixedColumns</a></li>
+<li><a href="http://docs.sencha.com/extjs/4.2.1/extjs-build/examples/build/KitchenSink/ext-theme-neptune/#locking-grid">Ext JS - Locking Grid</a></li>
+</ul><p>其中最为理想的是FixedColumns, 但在<strong>Android 2.3.x</strong>上(极有可能2.3之前的版本也无法使用, 但未测试过)无法使用, 试过在Android 4.x上一切正常.</p>
+
+<p>但还是有一点点小瑕疵. 由于FixedColumns的实现机制是利用原生的滚动条来控制固定列/表头, 在移动平台上不会出现这个原生的滚动条, 因此会给人不爽的感觉.</p>
+
+<p>想着是否需要参考这些已经成熟的固定列/表头的HTML结构, 自己来实现一个类似的组件, 让其兼容<strong>Android 2.3.x</strong>?</p>
+
+<h2>
+<a name="-4" class="anchor" href="#-4"><span class="octicon octicon-link"></span></a>深受启发</h2>
+
+<p>某日看过某人随便写的一个可以在移动平台上使用的固定列/表头的组件, 虽是个半成品, 但深受启发, 原来使用iScroll来代替原生滚动条就行了, 就这么简单.</p>
+
+<h2>
+<a name="fixedcolumns" class="anchor" href="#fixedcolumns"><span class="octicon octicon-link"></span></a>解析FixedColumns</h2>
+
+<p>了解下FixedColumns的原理就豁然开朗了.</p>
+
+<p>主要是通过做联动垂直/水平滚动条来实现滚动区域与固定区域保持一直
+<img src="inspiration/img/fixed-columns-scrollbar.jpg" height="385" width="620" alt="FixedColumns产生的原生滚动条"></p>
+
+<p>那么在Android 2.3.x上测试无法使用, 极有可能就是这些原生滚动条出了问题, 造成地无法滚动.</p>
+
+<p>因此我们将这些原生滚动条都用iScroll来代替就好了, 再让iScroll联动
+<img src="inspiration/img/fixed-columns-iscroll.jpg" height="365" width="621" alt="用iScroll来替代FixedColumns产生的原生滚动条"></p>
+
+<p>最最关键的好处是, 按照这种思路, 我根本不需要动其他组件的代码, 在FixedColumns组件构造完后, 再加入我将原生滚动条替换成iScroll的方法, 这样对大家都没有影响, 可谓完美的方案.</p>
+
+<h2>
+<a name="-5" class="anchor" href="#-5"><span class="octicon octicon-link"></span></a>常见问题</h2>
+
+<p>Q: 能集成bootstrap一起使用吗?</p>
+
+<p>A: 本组件兼容使用bootstrap作为基础样式库, 但切记一定要覆盖bootstrap默认的table样式max-width: 100%为max-width: none, 否则会使表格宽度无法溢出, 造成不出现水平滚动条的问题.</p>
+      </section>
+      <footer>
+        <p>Project maintained by <a href="https://github.com/ufologist">ufologist</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
