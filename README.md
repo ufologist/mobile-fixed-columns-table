@@ -49,7 +49,7 @@ $('#table').mobileFixedColumnsTable({
 依赖
 --------------------
 1. <a href="">jQuery</a>
-2. <a href="http://www.datatables.net">DataTables</a> && <a href="http://www.datatables.net/extras/fixedcolumns/">FixedColumns</a>
+2. <a href="http://www.datatables.net">DataTables</a> & <a href="http://www.datatables.net/extras/fixedcolumns/">FixedColumns</a>
 3. <a href="http://cubiq.org/iscroll-4">iScroll</a>
 
 不是我想要造轮子
@@ -62,11 +62,11 @@ $('#table').mobileFixedColumnsTable({
 * <a href="http://www.datatables.net/extras/fixedcolumns/">DataTables - FixedColumns</a>
 * <a href="http://docs.sencha.com/extjs/4.2.1/extjs-build/examples/build/KitchenSink/ext-theme-neptune/#locking-grid">Ext JS - Locking Grid</a>
 
-其中最为理想的是FixedColumns, 但在<strong>Android 2.3.x</strong>strong>上(极有可能2.3之前的版本也无法使用, 但未测试过)无法使用, 试过在Android 4.x上一切正常.
+其中最为理想的是FixedColumns, 但在<strong>Android 2.3.x</strong>上(极有可能2.3之前的版本也无法使用, 但未测试过)无法使用, 试过在Android 4.x上一切正常.
 
 但还是有一点点小瑕疵. 由于FixedColumns的实现机制是利用原生的滚动条来控制固定列/表头, 在移动平台上不会出现这个原生的滚动条, 因此会给人不爽的感觉.
 
-想着是否需要参考这些已经成熟的固定列/表头的HTML结构, 自己来实现一个类似的组件, 让其兼容<strong>Android 2.3.x</strong>strong>?
+想着是否需要参考这些已经成熟的固定列/表头的HTML结构, 自己来实现一个类似的组件, 让其兼容<strong>Android 2.3.x</strong>?
 
 深受启发
 --------------------
@@ -83,6 +83,8 @@ $('#table').mobileFixedColumnsTable({
 
 因此我们将这些原生滚动条都用iScroll来代替就好了, 再让iScroll联动
 <img src="inspiration/img/fixed-columns-iscroll.jpg" height="365" width="621" alt="用iScroll来替代FixedColumns产生的原生滚动条">
+
+最最关键的好处是, 按照这种思路, 我根本不需要动其他组件的代码, 在FixedColumns组件构造完后, 再加入我将原生滚动条替换成iScroll的方法, 这样对大家都没有影响, 可谓完美的方案.
 
 常见问题
 --------------------
