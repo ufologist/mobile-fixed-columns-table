@@ -1,7 +1,8 @@
 mobile-fixed-columns-table
-(v1.0 2013-07-04)
 ====================
 在移动平台上(Android/iOS...)可用的固定列/表头的表格组件
+
+v1.0 2013-07-04
 
 <img src="inspiration/img/preview-pc-browser.jpg" height="387" width="523" alt="PC浏览器上组件的运行效果截图" />
 
