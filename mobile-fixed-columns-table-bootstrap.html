@@ -36,6 +36,20 @@
     .browser-table tr.even.gradeU {
         background-color: #eee;
     }
+
+    .footer {
+        position: absolute;
+        bottom: 2px;
+        right: 2px;
+        width: 100%;
+        text-align: right;
+        background: #f5f5f5;
+        padding: 20px 0;
+    }
+    .name {
+        text-decoration: none;
+        color: #333;
+    }
     </style>
     <!-- 测试过的版本 1.8.2 -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
@@ -61,6 +75,15 @@
     </script>
 </head>
 <body>
+    <div class="navbar">
+        <div class="navbar-inner">
+            <a class="brand" href="http://ufologist.github.io/mobile-fixed-columns-table">Mobile Fixed Columns Table</a>
+        </div>
+    </div>
+    <a href="https://github.com/ufologist/mobile-fixed-columns-table"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
+    <div class="page-header">
+        <h1>Browser Grade <small>固定列/表头的表格</small></h1>
+    </div>
     <table class="table browser-table" id="example">
         <thead>
             <tr>
@@ -477,5 +500,10 @@
             </tr>
         </tbody>
     </table>
+    <div class="footer">
+        Powered by <a href="https://github.com/ufologist/mobile-fixed-columns-table">mobile-fixed-columns-table</a>
+        <a href="https://github.com/ufologist" class="name"><img height="20" src="https://secure.gravatar.com/avatar/81fca24ed0c8f855869bbe31947b6722?s=140&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png" width="20"> ufologist
+        </a>
+    </div>
 </body>
 </html>
