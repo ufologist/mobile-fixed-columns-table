@@ -18,9 +18,9 @@ v1.0 2013-07-04
 
 优势
 --------------------
-1. 兼容Android 2.3.x, 弥补了FixedColumns的不足
-2. 表格可滚动区域会出现滚动条引导用户操作(iOS上需要tap后才出现), 弥补了FixedColumns的不足
-3. 没有为达到功能而改动FixedColumns及任何第3方依赖库的源码, 巧妙地借力用力, 因此可以使用FixedColumns中强大的功能, 鱼和熊掌兼得...
+* 兼容Android 2.3.x, 弥补了FixedColumns的不足
+* 表格可滚动区域会出现滚动条引导用户操作(iOS上需要tap后才出现), 弥补了FixedColumns的不足
+* 没有为达到功能而改动FixedColumns及任何第3方依赖库的源码, 巧妙地借力用力, 因此可以使用FixedColumns中强大的功能, 鱼和熊掌兼得...
 
 使用方法
 --------------------
