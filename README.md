@@ -6,9 +6,7 @@ v1.0 2013-07-04
 
 <img src="inspiration/img/preview-pc-browser.jpg" height="387" width="523" alt="PC浏览器上组件的运行效果截图" />
 
-<img src="inspiration/img/S5660-2.3.4.jpg" height="480" width="320" alt="S5660 Android 2.3.4上的运行效果" />
-<img src="inspiration/img/Note2-4.1.1.jpg" height="1280" width="720" alt="Note2 Android 4.1.1上的运行效果">
-<img src="inspiration/img/iPhone5-6.1.3.jpg" height="1136" width="640" alt="iPhone5 iOS 6.1.3上的运行效果">
+<img src="inspiration/img/preview-mobile.png" height="504" width="897" alt="Android 2.3.x/Android 4.x/iOS上组件的运行效果截图" />
 
 测试过的手机
 --------------------
@@ -87,7 +85,7 @@ $('#table').mobileFixedColumnsTable({
 了解下FixedColumns的原理就豁然开朗了.
 
 主要是通过做联动垂直/水平滚动条来实现滚动区域与固定区域保持一直
-<img src="inspiration/img/fixed-columns-scrollbar.jpg" height="480" width="320" alt="FixedColumns产生的原生滚动条">
+<img src="inspiration/img/fixed-columns-scrollbar.jpg" height="385" width="620" alt="FixedColumns产生的原生滚动条">
 
 那么在Android 2.3.x上测试无法使用, 极有可能就是这些原生滚动条出了问题, 造成地无法滚动.
 
