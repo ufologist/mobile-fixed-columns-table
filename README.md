@@ -1,12 +1,12 @@
-mobile-fixed-columns-table
+<a href="http://ufologist.github.io/mobile-fixed-columns-table">mobile-fixed-columns-table</a>
 ====================
 在移动平台上(Android/iOS...)可用的固定列/表头的表格组件
 
 v1.0 2013-07-04
 
-<img src="inspiration/img/preview-pc-browser.jpg" height="387" width="523" alt="PC浏览器上组件的运行效果截图" />
-
 <img src="inspiration/img/preview-mobile.png" height="504" width="897" alt="Android 2.3.x/Android 4.x/iOS上组件的运行效果截图" />
+
+<img src="inspiration/img/preview-pc-browser.jpg" height="387" width="523" alt="PC浏览器上组件的运行效果截图" />
 
 测试过的手机
 --------------------
@@ -15,6 +15,12 @@ v1.0 2013-07-04
 * 小米1        -- Android 4.1.2
 * GT-I8552     -- Android 4.1.2
 * iPhone5      -- iOS 6.1.3
+
+优势
+--------------------
+1. 兼容Android 2.3.x, 弥补了FixedColumns的不足
+2. 表格可滚动区域会出现滚动条引导用户操作(iOS上需要tap后才出现), 弥补了FixedColumns的不足
+3. 没有为达到功能而改动FixedColumns及任何第3方依赖库的源码, 巧妙地借力用力, 因此可以使用FixedColumns中强大的功能, 鱼和熊掌兼得...
 
 使用方法
 --------------------
