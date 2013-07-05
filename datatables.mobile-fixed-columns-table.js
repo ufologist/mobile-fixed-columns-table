@@ -4,7 +4,7 @@
  * 
  * Released under MIT license
  * 
- * @auther Sun
+ * @auther Sun https://github.com/ufologist/mobile-fixed-columns-table
  * @version 1.0 2013-7-4
  */
 (function($, root) {
