@@ -16,6 +16,16 @@ v1.0 2013-07-04
 * GT-I8552     -- Android 4.1.2
 * iPhone5      -- iOS 6.1.3
 
+Android App Demo
+--------------------
+基于phonegap来使用mobile-fixed-columns-table组件.
+
+<img src="http://ufologist.github.io/mobile-fixed-columns-table/images/android-demo-snapshot.png" height="427" width="240" alt="android-demo-app" />
+
+立刻扫描下面的二维码下载Android app体验吧!
+
+<a href="https://github.com/ufologist/mobile-fixed-columns-table/raw/android-demo/bin/fixed-columns-table.apk"><img src="http://ufologist.github.io/mobile-fixed-columns-table/images/android-demo-qrcode.png" height="300" width="300" alt="android-demo-qrcode" /></a>
+
 优势
 --------------------
 * 兼容Android 2.3.x, 弥补了FixedColumns的不足
