@@ -67,7 +67,7 @@
   <p>
     <img src="images/android-demo-snapshot.png" height="427" width="240" alt="android-demo-app" />
   </p>
-  <p>立刻扫描下面的二维码下载Android app体验吧!</p>
+  <p>立刻扫描下面的二维码<a href="https://github.com/ufologist/mobile-fixed-columns-table/raw/android-demo/bin/fixed-columns-table.apk">下载Android app体验</a>吧!</p>
   <a href="https://github.com/ufologist/mobile-fixed-columns-table/raw/android-demo/bin/fixed-columns-table.apk"><img src="images/android-demo-qrcode.png" height="300" width="300" alt="android-demo-qrcode" /></a>
 </div>
 <h2>
@@ -75,7 +75,7 @@
 <ul>
   <li>兼容Android 2.3.x, 弥补了FixedColumns的不足</li>
   <li>表格可滚动区域会出现滚动条引导用户操作(iOS上需要tap后才出现), 弥补了FixedColumns的不足</li>
-  <li>没有为达到功能而改动FixedColumns及任何第3方依赖库的源码, 巧妙地借力用力, 因此可以使用FixedColumns中强大的功能, 鱼和熊掌兼得...</li>
+  <li>没有为达到功能而改动FixedColumns及任何第3方依赖库的源码, 巧妙地借力用力, 因此可以使用FixedColumns原有的强大功能, 鱼和熊掌兼得...</li>
 </ul>
 <h2>
 <a name="usage" class="anchor" href="#-1"><span class="octicon octicon-link"></span></a>使用方法</h2>
@@ -109,6 +109,13 @@
 </pre></div>
 
 <h2>
+<a name="example" class="anchor" href="#-2"><span class="octicon octicon-link"></span></a>示例</h2>
+<ul>
+<li><a href="http://ufologist.github.io/mobile-fixed-columns-table/mobile-fixed-columns-table-bootstrap.html">mobile fixed columns table与bootstrap一起使用</a></li>
+<li><a href="http://ufologist.github.io/mobile-fixed-columns-table/mobile-fixed-columns-table-democss.html">mobile fixed columns table与DataTables的demo.css一起使用</a></li>
+</ul>
+
+<h2>
 <a name="deps" class="anchor" href="#-2"><span class="octicon octicon-link"></span></a>依赖</h2>
 
 <ol>
@@ -120,8 +127,8 @@
 </ol><h2>
 <a name="why" class="anchor" href="#-3"><span class="octicon octicon-link"></span></a>不是我想要造轮子</h2>
 
-<p>为什么非要专门为移动平台包装这么一个组件?
-主要是因为试过很多可以固定列/表头的表格组件, 在移动平台上使用都不理想.</p>
+<p>为什么非要专门为移动平台包装这么一个组件?</p>
+<p>主要是因为试过很多可以固定列/表头的表格组件, 在移动平台上使用都不太理想.</p>
 
 <p>例如:</p>
 
@@ -145,7 +152,7 @@
 
 <p>了解下FixedColumns的原理就豁然开朗了.</p>
 
-<p>主要是通过做联动垂直/水平滚动条来实现滚动区域与固定区域保持一直
+<p>主要是通过做联动垂直/水平滚动条来使滚动区域与固定区域保持一致
 <img src="https://raw.github.com/ufologist/mobile-fixed-columns-table/master/inspiration/img/fixed-columns-scrollbar.jpg" height="385" width="620" alt="FixedColumns产生的原生滚动条"></p>
 
 <p>那么在Android 2.3.x上测试无法使用, 极有可能就是这些原生滚动条出了问题, 造成地无法滚动.</p>
