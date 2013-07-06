@@ -16,7 +16,7 @@ v1.0 2013-07-04
 * GT-I8552     -- Android 4.1.2
 * iPhone5      -- iOS 6.1.3
 
-Android App Demo
+<a href="https://github.com/ufologist/mobile-fixed-columns-table/tree/android-demo">Android App Demo</a>
 --------------------
 基于phonegap来使用mobile-fixed-columns-table组件.
 
