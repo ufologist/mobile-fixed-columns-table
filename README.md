@@ -66,6 +66,7 @@ $('#table').mobileFixedColumnsTable({
 --------------------
 * <a href="http://ufologist.github.io/mobile-fixed-columns-table/mobile-fixed-columns-table-bootstrap.html">mobile fixed columns table与bootstrap一起使用</a>
 * <a href="http://ufologist.github.io/mobile-fixed-columns-table/mobile-fixed-columns-table-democss.html">mobile fixed columns table与DataTables的demo.css一起使用</a>
+* <a href="http://ufologist.github.io/mobile-fixed-columns-table/mobile-fixed-columns-table-long-header.html">mobile fixed columns table 支持超长表头</a>
 
 依赖
 --------------------
