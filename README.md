@@ -2,7 +2,7 @@
 ====================
 在移动平台上(Android/iOS...)可用的固定列/表头的表格组件
 
-v1.0 2013-07-04
+v1.0.1 2013-10-11
 
 <img src="inspiration/img/preview-mobile.png" height="504" width="897" alt="Android 2.3.x/Android 4.x/iOS上组件的运行效果截图" />
 
@@ -74,5 +74,10 @@ $('#table').mobileFixedColumnsTable({
 2. <a href="http://www.datatables.net">DataTables</a> & <a href="http://www.datatables.net/extras/fixedcolumns/">FixedColumns</a>
 3. <a href="http://cubiq.org/iscroll-4">iScroll</a>
 
+changelog
+--------------------
+v1.0.1 2013-10-11
+1. 修复一点点在用户体验上的问题
+   即使页面区域还有剩余, 但表格总处于可滑动的状态出现垂直滚动条, 功能上倒是没什么影响.
 
 想了解更多信息请访问<a href="http://ufologist.github.io/mobile-fixed-columns-table">项目主页</a>
