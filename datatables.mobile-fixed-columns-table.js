@@ -92,7 +92,8 @@
             //       这时我们就固定可滑动区域的高度为表格的新高度,
             //       确保可滑动区域与表格一样高, 这样就不会有垂直滚动条了
             var tableOffsetHeight = this.fixedColumns.dom.body.offsetHeight;
-            var sScrollY = this.fixedColumns.s.dt.oScroll.sY;
+            // 有可能配置的sY本身就带了单位
+            var sScrollY = this.fixedColumns.s.dt.oScroll.sY.toString().replace('px', '');
             var scrollBody = this.fixedColumns.dom.scroller;
             if (tableOffsetHeight > sScrollY) {
                 scrollBody.style.height = sScrollY + 'px';
