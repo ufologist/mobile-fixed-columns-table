@@ -133,9 +133,11 @@
             $(scrollHeader).find('.dataTables_scrollHeadInner')
                            .css('padding-right', 0)
                            .end()
-                           // iscroll 初始化后会设置子元素(dataTables_scrollHeadInner) absolute,
-                           // 导致父元素失去高度, 因此这里预先设置一下,
-                           // 否则在高版本浏览器(chrome 41.0.2272.101)上会出现dataTables_scrollHead消失的问题
+                           // iscroll 初始化会设置子元素(dataTables_scrollHeadInner) 为可移动的,
+                           // 可能是通过 translate 来实现或者 absolute 位置来实现.
+                           // 应该是根据浏览器支持(CSS3)的情况来判断使用哪一种实现.
+                           // 当选择 absolute 来实现时, 会导致父元素失去高度, 因此这里预先设置一下,
+                           // 否则在浏览器(测试了chrome 41.0.2272.101)上会出现dataTables_scrollHead"消失"的问题
                            .height($(scrollHeader).height()); 
 
             this.fixedHeaderScroller = new iScroll(scrollHeader, MobileFixedColumns.fixedScrollerOptions);
