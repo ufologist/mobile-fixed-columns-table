@@ -5,7 +5,7 @@
  * Released under MIT license
  * 
  * @auther Sun https://github.com/ufologist/mobile-fixed-columns-table
- * @version 1.0.1 2013-10-11
+ * @version 1.0.2 2015-9-24
  */
 (function($, root) {
     function MobileFixedColumns(fixedColumns, scrollerOptions) {
@@ -130,7 +130,13 @@
             var scrollHeader = this.fixedColumns.s.dt.nScrollHead;
             // 固定表头多余的padding-right造成iscroll拖动到最右边时表头出现空余
             // 这个padding-right是为浏览器原生的垂直滚动条预览的空间
-            $(scrollHeader).find('.dataTables_scrollHeadInner').css('padding-right', 0);
+            $(scrollHeader).find('.dataTables_scrollHeadInner')
+                           .css('padding-right', 0)
+                           .end()
+                           // iscroll 初始化后会设置子元素(dataTables_scrollHeadInner) absolute,
+                           // 导致父元素失去高度, 因此这里预先设置一下,
+                           // 否则在高版本浏览器(chrome 41.0.2272.101)上会出现dataTables_scrollHead消失的问题
+                           .height($(scrollHeader).height()); 
 
             this.fixedHeaderScroller = new iScroll(scrollHeader, MobileFixedColumns.fixedScrollerOptions);
         },
