@@ -2,7 +2,7 @@
 ====================
 在移动平台上(Android/iOS...)可用的固定列/表头的表格组件
 
-v1.0.1 2013-10-11
+v1.0.2 2015-9-24
 
 <img src="inspiration/img/preview-mobile.png" height="504" width="897" alt="Android 2.3.x/Android 4.x/iOS上组件的运行效果截图" />
 
