@@ -85,3 +85,10 @@ changelog
   1. 修复一点点在用户体验上的问题, 即使页面区域还有剩余, 但表格总处于可滑动的状态出现垂直滚动条, 功能上倒是没什么影响.
 
 想了解更多信息请访问<a href="http://ufologist.github.io/mobile-fixed-columns-table">项目主页</a>
+
+其他 Responsive Tables 方案
+--------------------
+* [CSS only Responsive Tables](http://dbushell.com/2016/03/04/css-only-responsive-tables/)
+
+  ![Basic overflow responsive table](http://dbushell.com/images/blog/responsive-table.png)
+  竟然还有 Scrolling shadows, 太高级了
