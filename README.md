@@ -93,3 +93,6 @@ changelog
   ![Basic overflow responsive table](http://dbushell.com/images/blog/responsive-table.png)
 
   竟然还有 Scrolling shadows, 太高级了
+
+* [Fixed-Header-Table](https://github.com/markmalek/Fixed-Header-Table)
+* [Fixed Table Header and Columns](https://github.com/meetselva/fixed-table-rows-cols)
